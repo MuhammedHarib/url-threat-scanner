@@ -1,189 +1,340 @@
+````markdown
 <div align="center">
 
 # 🛡️ URL Threat Scanner
 
 ### Real-Time URL Threat Intelligence Platform
 
-**Scan any URL against 7+ live threat intelligence sources — powered by AI.**
+Analyze any website using **7+ live threat intelligence services**, **AI-powered security analysis**, **SSL validation**, and **heuristic detection**.
 
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
-[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
-[![Express](https://img.shields.io/badge/Express-4-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+<p>
 
-<br/>
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-![URL Threat Scanner](https://placehold.co/900x480/0f172a/00ffe0?text=URL+Threat+Scanner+%E2%80%94+Security+Intelligence+Platform)
+</p>
+
+> **A full-stack cybersecurity platform that scans URLs in real time using multiple threat intelligence providers and AI reasoning.**
+
+---
+
+### 📸 Preview
+
+> Replace this placeholder with your application screenshot.
+
+<p align="center">
+<img src="https://placehold.co/1000x520/0f172a/00ffe0?text=URL+Threat+Scanner" width="95%">
+</p>
 
 </div>
 
 ---
 
-## ✨ What is URL Threat Scanner?
+# ✨ Features
 
-**URL Threat Scanner** is a full-stack cybersecurity intelligence platform that analyzes any URL in real time using multiple threat intelligence sources, SSL inspection, domain analysis, heuristic detection, and AI reasoning.
-
-It helps detect:
-- Phishing websites
-- Malware-hosting domains
-- Suspicious or newly registered domains
-- Invalid or expired SSL certificates
-- Malicious URL patterns
-
----
-
-## 🔍 Threat Intelligence Sources
-
-| Source | Type | Key Required |
-|---|---|---|
-| 🦠 URLhaus | Malware database | No |
-| 🔬 VirusTotal | Multi-engine scan | Yes |
-| 🌐 URLScan.io | Live browser analysis | Yes |
-| 🔴 Google Safe Browsing | Phishing & malware detection | Yes |
-| 🎣 PhishTank | Verified phishing URLs | No |
-| 🏛️ RDAP | Domain information | No |
-| 🔒 SSL Analysis | Certificate validation | No |
-| 🧠 Heuristic Engine | Pattern detection | No |
+- 🛡️ Scan URLs using multiple threat intelligence services
+- 🤖 AI-powered threat explanation
+- ⚡ Parallel API scanning
+- 📊 Dynamic risk score (0–10)
+- 🌍 Domain & IP intelligence
+- 🔒 SSL Certificate validation
+- 📸 Website screenshot capture
+- 📜 Scan history
+- 📄 Export reports
+- 🚦 Rate limiting
+- 🔐 Secure backend API
 
 ---
 
-## 🤖 AI-Powered Analysis
+# 🔍 Threat Intelligence Sources
 
-- **Grok (xAI)** — primary AI engine  
-- **Gemini (Google)** — fallback engine  
-
-Features:
-- Threat summarization
-- Risk explanation
-- Interactive AI chat after scan
-
----
-
-## 🚀 Features
-
-- ⚡ Parallel multi-source scanning
-- 📊 Risk score (0–10 scale)
-- 📈 Visual risk breakdown
-- 🖼️ Website screenshot capture
-- 🌍 Domain & IP metadata
-- 🏷️ Source-level verification status
-- 📜 Scan history system
-- 📄 Exportable reports
-- 🔒 Rate limiting protection
-- 🛡️ Secure backend (no exposed API keys)
+| Service | Purpose | API Key |
+|----------|----------|----------|
+| 🦠 URLhaus | Malware database | ❌ |
+| 🔬 VirusTotal | Multi-engine malware scan | ✅ |
+| 🌐 URLScan.io | Browser & page analysis | ✅ |
+| 🔴 Google Safe Browsing | Malware & phishing detection | ✅ |
+| 🎣 PhishTank | Verified phishing URLs | ❌ |
+| 🏛️ RDAP | Domain ownership | ❌ |
+| 🔒 SSL Analysis | Certificate validation | ❌ |
+| 🧠 Heuristic Engine | Pattern detection | ❌ |
 
 ---
 
-## 🗂️ Project Structure
+# 🤖 AI Analysis
 
-```bash
+The platform automatically generates an easy-to-understand security report using AI.
+
+### Primary AI
+- 🚀 Grok (xAI)
+
+### Fallback AI
+- ✨ Gemini
+
+AI provides:
+
+- Threat explanation
+- Risk summary
+- Recommended actions
+- Interactive security chat
+
+---
+
+# 📁 Project Structure
+
+```text
 url-threat-scanner/
+│
 ├── backend/
 │   ├── server.js
-│   ├── .env (not committed)
+│   ├── routes/
+│   ├── services/
 │   ├── history.json
+│   ├── .env
 │   └── package.json
 │
-└── frontend/
-    ├── src/
-    │   ├── pages/
-    │   ├── components/
-    │   └── utils/
-    └── package.json
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── utils/
+│   │   └── assets/
+│   └── package.json
+│
+└── README.md
+```
 
-    
 ---
 
-## ⚙️ Setup
+# 🚀 Installation
 
-### 1. Clone repo
+## Clone Repository
+
 ```bash
 git clone https://github.com/yourusername/url-threat-scanner.git
+
 cd url-threat-scanner
+```
 
+---
 
-## ⚙️ Installation & Setup
+## Backend
 
-### 📦 Install dependencies
-
-**Backend**
 ```bash
 cd backend
+
 npm install
 
+npm run dev
+```
 
-**Frontend**
+---
 
+## Frontend
+
+```bash
 cd frontend
+
 npm install
 
+npm run dev
+```
 
+---
 
-Environment Setup
+# ⚙️ Environment Variables
 
-Create backend/.env:
+Create
 
+```text
+backend/.env
+```
+
+```env
 PORT=4000
 
-GROK_API_KEY=your_key_here
-GEMINI_API_KEY=your_key_here
+GROK_API_KEY=
 
-VIRUSTOTAL_API_KEY=your_key_here
-URLSCAN_API_KEY=your_key_here
-GOOGLE_SAFE_BROWSING_API_KEY=your_key_here
-🚀 Run Project
+GEMINI_API_KEY=
+
+VIRUSTOTAL_API_KEY=
+
+URLSCAN_API_KEY=
+
+GOOGLE_SAFE_BROWSING_API_KEY=
+```
+
+---
+
+# 🌐 Running
 
 Backend
 
+```bash
 cd backend
+
 npm run dev
+```
 
 Frontend
 
+```bash
 cd frontend
+
 npm run dev
+```
 
-Frontend: http://localhost:3000
-Backend: http://localhost:4000
+Open
 
-🔐 Security
-API keys stored only in backend
-No secrets in frontend
-Input validation enabled
-Rate limiting enabled
-AI calls proxied securely
-📡 API Endpoints
-Method	Endpoint	Description
-POST	/api/scan	Scan a URL
-POST	/api/ai/chat	AI chat assistant
-GET	/api/history	Get scan history
-DELETE	/api/history	Clear history
-GET	/api/health	System status
-🧪 Example Output
+```
+Frontend
+http://localhost:3000
 
-Threat Score: 9.2 / 10 (HIGH RISK)
+Backend
+http://localhost:4000
+```
 
-Malware detected in multiple engines
-Recently registered domain
-Invalid SSL certificate
-Flagged by phishing databases
-🛡️ License
+---
 
-MIT © 2026 URL Threat Scanner
+# 📡 API Endpoints
 
-👨‍💻 Author
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/api/scan` | Scan URL |
+| POST | `/api/ai/chat` | AI Assistant |
+| GET | `/api/history` | Scan History |
+| DELETE | `/api/history` | Delete History |
+| GET | `/api/health` | Health Check |
 
-Built by Muhammad Harib
+---
 
-⭐ Support
+# 🧪 Example Scan
 
-If you like this project, give it a ⭐ on GitHub
+```text
+Threat Score
 
+9.2 / 10
 
-If you want next upgrade, I can make your README:
-- 🔥 GitHub trending style (viral layout)
-- 💼 internship-ready portfolio README
-- 🚀 or add badges + animations + stats cards
+HIGH RISK
 
-Just tell me 👍
+✔ Malware detected
+✔ Phishing database match
+✔ Invalid SSL Certificate
+✔ Newly Registered Domain
+✔ Suspicious URL Pattern
+```
+
+---
+
+# 🔐 Security
+
+- API keys stored only on backend
+- No secrets exposed to frontend
+- Input validation
+- Secure API proxy
+- Rate limiting
+- Error handling
+- Environment variables
+
+---
+
+# 💻 Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- Axios
+- Tailwind CSS
+
+### Backend
+
+- Node.js
+- Express
+- Axios
+- dotenv
+
+### AI
+
+- Grok
+- Gemini
+
+### Threat Intelligence
+
+- VirusTotal
+- URLhaus
+- URLScan
+- Google Safe Browsing
+- PhishTank
+- RDAP
+- SSL Validation
+
+---
+
+# 🚀 Future Improvements
+
+- User authentication
+- PDF reports
+- Email alerts
+- Browser extension
+- Bulk URL scanning
+- Threat trends dashboard
+- Dark mode
+- Docker deployment
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the project
+
+2. Create your feature branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+Licensed under the **MIT License**.
+
+---
+
+# 👨‍💻 Author
+
+### Muhammad Harib
+
+Cybersecurity • Full Stack Development • AI
+
+---
+
+<div align="center">
+
+If you found this project useful,
+
+⭐ **Please consider giving it a Star on GitHub!**
+
+</div>
+````
