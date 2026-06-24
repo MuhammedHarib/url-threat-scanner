@@ -117,3 +117,73 @@ npm install
 
 cd frontend
 npm install
+
+
+
+Environment Setup
+
+Create backend/.env:
+
+PORT=4000
+
+GROK_API_KEY=your_key_here
+GEMINI_API_KEY=your_key_here
+
+VIRUSTOTAL_API_KEY=your_key_here
+URLSCAN_API_KEY=your_key_here
+GOOGLE_SAFE_BROWSING_API_KEY=your_key_here
+🚀 Run Project
+
+Backend
+
+cd backend
+npm run dev
+
+Frontend
+
+cd frontend
+npm run dev
+
+Frontend: http://localhost:3000
+Backend: http://localhost:4000
+
+🔐 Security
+API keys stored only in backend
+No secrets in frontend
+Input validation enabled
+Rate limiting enabled
+AI calls proxied securely
+📡 API Endpoints
+Method	Endpoint	Description
+POST	/api/scan	Scan a URL
+POST	/api/ai/chat	AI chat assistant
+GET	/api/history	Get scan history
+DELETE	/api/history	Clear history
+GET	/api/health	System status
+🧪 Example Output
+
+Threat Score: 9.2 / 10 (HIGH RISK)
+
+Malware detected in multiple engines
+Recently registered domain
+Invalid SSL certificate
+Flagged by phishing databases
+🛡️ License
+
+MIT © 2026 URL Threat Scanner
+
+👨‍💻 Author
+
+Built by Muhammad Harib
+
+⭐ Support
+
+If you like this project, give it a ⭐ on GitHub
+
+
+If you want next upgrade, I can make your README:
+- 🔥 GitHub trending style (viral layout)
+- 💼 internship-ready portfolio README
+- 🚀 or add badges + animations + stats cards
+
+Just tell me 👍
