@@ -91,3 +91,29 @@ url-threat-scanner/
     │   ├── components/
     │   └── utils/
     └── package.json
+
+    
+---
+
+## ⚙️ Setup
+
+### 1. Clone repo
+```bash
+git clone https://github.com/yourusername/url-threat-scanner.git
+cd url-threat-scanner
+
+
+## ⚙️ Installation & Setup
+
+### 📦 Install dependencies
+
+**Backend**
+```bash
+cd backend
+npm install
+
+
+**Frontend**
+
+cd frontend
+npm install
