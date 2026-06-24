@@ -1,4 +1,3 @@
-````markdown
 <div align="center">
 
 # 🛡️ URL Threat Scanner
@@ -322,7 +321,7 @@ Licensed under the **MIT License**.
 
 ---
 
-# 👨‍💻 Author
+# 👨💻 Author
 
 ### Muhammad Harib
 
@@ -337,4 +336,3 @@ If you found this project useful,
 ⭐ **Please consider giving it a Star on GitHub!**
 
 </div>
-````
